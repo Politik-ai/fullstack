@@ -1,6 +1,7 @@
 cd ..
 git clone git@github.com:Politik-ai/data_collection.git
 git clone git@github.com:Politik-ai/congress.git
+git clone git@github.com:Politik-ai/political_analytics.git
 
 while [ "$1" != "" ]
 do
@@ -13,6 +14,9 @@ do
     fi
 shift
 done
+
+
+
 
 echo "Done"
 exit 0
