@@ -8,8 +8,10 @@ do
     if [ "$1" == "--dev" ]
     then
         cd congress
+        pip install -r requirements.txt
         ./test_setup.sh
         cd ../data_collection
+        pip3 install -r requirements.txt
         ./create_db.sh
     fi
 shift
