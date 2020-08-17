@@ -9,10 +9,14 @@ do
     then
         cd congress
         pip install -r requirements.txt
+
+        cd ../fullstack
         ./test_setup.sh
+
         cd ../data_collection
         pip3 install -r requirements.txt
-        #./create_db.sh
+        cd database_filler
+        python3 update.py
     fi
 shift
 done
