@@ -12,7 +12,7 @@ do
         ./test_setup.sh
         cd ../data_collection
         pip3 install -r requirements.txt
-        ./create_db.sh
+        #./create_db.sh
     fi
 shift
 done
